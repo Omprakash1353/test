@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reconnaissance Phase in Cybersecurity</title>
+    <style>
+      body {
+        background-color: #121212;
+        color: #ffffff98;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #0bec8f;
+      }
+      a {
+        color: #3e12ff;
+      }
+      .container {
+        max-width: 900px;
+        width: 100%;
+        margin: auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+      ul {
+        margin-bottom: 20px;
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      strong {
+        color: #ffffff;
+      }
+      .img-container {
+        width: 100%;
+        margin: 2rem auto;
+        text-align: center;
+        overflow: hidden;
+      }
+      .img-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+      @media screen and (max-width: 768px) {
+        body {
+          padding: 15px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        .container {
+          padding: 0 10px;
+        }
+        .img-container {
+          margin: 1.5rem auto;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        body {
+          padding: 10px;
+        }
+        h1 {
+          font-size: 22px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+        p,
+        li {
+          font-size: 14px;
+        }
+        .container {
+          padding: 0 8px;
+        }
+        .img-container {
+          margin: 1rem auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Reconnaissance Phase</h1>
+      <p>
+        The reconnaissance phase is the first step in ethical hacking,
+        penetration testing, and cybersecurity assessments. It involves
+        gathering information about a target system to identify vulnerabilities
+        and potential attack vectors. This phase is crucial because the quality
+        of information collected determines the success of subsequent phases,
+        such as scanning, exploitation, and privilege escalation.
+      </p>
+
+      <div class="img-container">
+        <img src="/image.png" alt="Reconnaissance Phase Diagram" />
+      </div>
+
+      <h2>Types of Reconnaissance</h2>
+      <p>
+        Reconnaissance can be broadly categorized into two types:
+        <strong>Passive Reconnaissance</strong> and
+        <strong>Active Reconnaissance</strong>.
+      </p>
+
+      <h3>1. Passive Reconnaissance</h3>
+      <p>
+        Passive reconnaissance involves gathering information about a target
+        without directly interacting with it. This method reduces the risk of
+        detection since it primarily relies on publicly available data.
+      </p>
+
+      <h3>Passive Reconnaissance Techniques:</h3>
+      <ul>
+        <li>
+          <strong>OSINT Collection (Open-Source Intelligence):</strong>
+          <ul>
+            <li>
+              Social Media Analysis: Gathering information from LinkedIn,
+              Twitter, and other platforms to identify employees, technologies,
+              and potential weak points.
+            </li>
+            <li>
+              WHOIS Lookups: Retrieving domain registration details to find
+              ownership information, email contacts, and associated IPs.
+            </li>
+            <li>
+              Public Records: Searching for corporate filings, patents, and
+              regulatory documents that might reveal insights about the
+              organization.
+            </li>
+            <li>
+              Search Engine Queries: Using advanced Google dorking techniques to
+              uncover hidden files, internal documents, and exposed sensitive
+              data.
+            </li>
+            <li>
+              Job Listings Review: Examining job postings to infer technology
+              stacks, software versions, and security practices.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Technical Information Gathering:</strong>
+          <ul>
+            <li>
+              DNS Records Analysis: Extracting A, MX, TXT, and CNAME records to
+              understand the target&apos;s infrastructure.
+            </li>
+            <li>
+              Subdomain Enumeration: Identifying subdomains that might lead to
+              lesser-protected parts of a website or system.
+            </li>
+            <li>
+              Technical Documentation: Finding public documentation, API
+              references, and manuals to understand system configurations.
+            </li>
+            <li>
+              Email Harvesting: Collecting email addresses for potential
+              phishing campaigns or brute-force attacks.
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>2. Active Reconnaissance</h3>
+      <p>
+        Active reconnaissance involves direct interaction with the target system
+        to extract information. While this provides more detailed insights, it
+        also increases the risk of detection.
+      </p>
+
+      <h3>Active Reconnaissance Techniques:</h3>
+      <ul>
+        <li>
+          <strong>Network Scanning:</strong>
+          <ul>
+            <li>
+              Port Scanning: Identifying open ports using tools like Nmap to
+              determine accessible services.
+            </li>
+            <li>
+              Service Enumeration: Detecting running services and versions to
+              assess potential vulnerabilities.
+            </li>
+            <li>
+              OS Fingerprinting: Determining the operating system and patch
+              levels to craft specific exploits.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Web Application Analysis:</strong>
+          <ul>
+            <li>
+              Directory Enumeration: Identifying accessible directories and
+              hidden files using tools like DirBuster and Gobuster.
+            </li>
+            <li>
+              Technology Stack Identification: Discovering the technologies and
+              frameworks used by a web application to find known
+              vulnerabilities.
+            </li>
+            <li>
+              Parameter Discovery: Mapping out query parameters, input fields,
+              and API endpoints that may be exploitable.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Social Engineering:</strong>
+          <ul>
+            <li>
+              Phishing Campaigns: Crafting emails and messages to deceive
+              employees into revealing credentials or installing malware.
+            </li>
+            <li>
+              Pretexting: Creating fake scenarios to manipulate employees into
+              disclosing confidential information.
+            </li>
+            <li>
+              Physical Reconnaissance: Conducting real-world surveillance, such
+              as dumpster diving or tailgating, to gain unauthorized access.
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>From Reconnaissance to Target Profiling</h2>
+      <p>
+        Once passive and active reconnaissance data is gathered, it is
+        correlated to form a <strong>Target Profile</strong>. This profile helps
+        in:
+      </p>
+      <ul>
+        <li>Understanding security gaps.</li>
+        <li>Hypothesizing potential vulnerabilities.</li>
+        <li>Prioritizing attack vectors for further penetration testing.</li>
+      </ul>
+      <p>
+        The final step in reconnaissance is forming
+        <strong>Vulnerability Hypotheses</strong>, which are then tested in the
+        scanning phase.
+      </p>
+
+      <h2>Conclusion</h2>
+      <p>
+        The reconnaissance phase is essential in cybersecurity assessments as it
+        lays the foundation for identifying security weaknesses. Ethical hackers
+        and penetration testers use this phase to gather intelligence in a
+        structured manner before moving to the scanning and exploitation phases.
+      </p>
+      <p>
+        By mastering both passive and active reconnaissance techniques,
+        cybersecurity professionals can enhance their defensive strategies and
+        improve an organization&apos;s security posture.
+      </p>
+    </div>
+  </body>
+</html>
